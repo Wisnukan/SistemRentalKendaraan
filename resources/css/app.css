@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@layer components {
+    .card {
+        @apply
+        bg-white text-gray-700
+        w-72 min-h-[10rem]
+        shadow-lg rounded-md overflow-hidden cursor-pointer hover:scale-105 duration-75
+    }
+
+    .badge {
+        @apply
+        px-3 py-1 rounded-full text-xs bg-gray-100
+    }
+
+    .tittle {
+        @apply
+        font-semibold text-2xl overflow-ellipsis overflow-hidden whitespace-nowrap
+    }
+
+    .percent {
+        @apply
+        bg-green-500 px-1.5 py-0.5 rounded-md text-xs text-white
+    }
+
+    .btn-product {
+        @apply
+        bg-color px-6 py-2 rounded-md text-white font-medium tracking-wider transition
+    }
+
+    .stock {
+        @apply
+        px-3 py-3 text-sm font-medium
+    }
+
+    .headline {
+        @apply
+        w-96 text-white text-4xl font-semibold leading-10 tracking-widest ml-4
+    }
+
+    .desc {
+        @apply
+        w-96 text-white text-xs font-normal leading-6 tracking-widest ml-4
+    }
+
+    .heading {
+        @apply
+        text-center
+    }
+
+    .heading span {
+        @apply
+        text-sm font-medium
+    }
+
+    .heading h1 {
+        @apply
+        font-bold text-2xl text-white leading-normal tracking-wider
+    }
+
+    .ride-container {
+        @apply
+        grid grid-cols-3 items-center gap-4 mt-8
+    }
+
+    .ride-container .box {
+        @apply
+        text-center p-5
+    }
+
+    .ride-container .box .fa {
+        @apply
+        text-[34px] p-3 bg-[#2b2b2b] rounded-[0.5rem] text-color
+    }
+
+    .ride-container .box h2 {
+        @apply
+        text-lg font-medium text-white m-4
+    }
+
+    .ride-container .box p {
+        @apply
+        text-sm text-white font-normal
+    }
+
+    .ride-container .box .fa:hover {
+        @apply
+        bg-primary 
+    }
+
+    .testi-container {
+        @apply
+        grid grid-cols-3 gap-4 mt-8
+    }
+
+    .testi .heading h1 {
+        @apply
+        text-secondary
+    }
+
+    .testi-img {
+        @apply
+        w-16 h-16
+    }
+
+    .testi-img img {
+        @apply
+        w-12 h-12 object-cover border-color
+    }
+
+    .testi-container .box {
+        @apply
+        flex flex-col items-center text-center p-5 shadow-xl rounded-md
+    }
+
+    .testi-container .box h2 {
+        @apply
+        text-lg font-semibold m-2
+    }
+
+    .testi-container .box p {
+        @apply
+        italic mt-2 mb-4
+    }
+
+    .testi-container .box .stars .fa {
+        @apply
+        text-color
+    }
+
+    .footer {
+        @apply
+        bg-secondary mt-14 pt-8 flex
+    }
+
+    .footer a {
+        @apply
+        text-white
+    }
+
+    .footer-desc {
+        @apply
+        w-[318px] text-white text-xs font-normal leading-[27.12px] tracking-widest mt-4 opacity-80
+    }
+}
